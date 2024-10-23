@@ -1,19 +1,18 @@
-package solvd.com.carina.demo.gui.pages;
+package com.solvd.carina.demo.gui.pages;
 
-import java.lang.invoke.MethodHandles;
-import java.util.List;
-
+import com.solvd.carina.demo.gui.components.FooterMenu;
+import com.solvd.carina.demo.gui.components.WeValuePrivacyAd;
 import com.zebrunner.carina.utils.config.Configuration;
 import com.zebrunner.carina.webdriver.config.WebDriverConfiguration;
+import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractPage;
-import solvd.com.carina.demo.gui.components.FooterMenu;
-import solvd.com.carina.demo.gui.components.WeValuePrivacyAd;
+import java.lang.invoke.MethodHandles;
+import java.util.List;
 
 
 public class HomePage extends AbstractPage {
@@ -54,9 +53,9 @@ public class HomePage extends AbstractPage {
         }
         throw new RuntimeException("Unable to open brand: " + brand);
     }
-    
+
     public WeValuePrivacyAd getWeValuePrivacyAd() {
-    	return new WeValuePrivacyAd(driver);
+        return new WeValuePrivacyAd(driver);
     }
 
     @Override

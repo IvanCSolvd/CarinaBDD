@@ -1,12 +1,11 @@
-package solvd.com.carina.demo.gui.components;
+package com.solvd.carina.demo.gui.components;
 
+import com.solvd.carina.demo.gui.pages.ModelInfoPage;
+import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
-import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
-import solvd.com.carina.demo.gui.pages.ModelInfoPage;
 
 public class ModelItem extends AbstractUIObject {
 
