@@ -17,9 +17,8 @@
         </environment>
     </environments>
 
-    <!--todo: create mappers for actions in the database-->
     <mappers>
-        <mapper resource="" />
-        <mapper resource="" />
+        <mapper resource="mappers/UserMapper.xml" />
+        <mapper resource="mappers/UserOrderMapper.xml" />
     </mappers>
 </configuration>
