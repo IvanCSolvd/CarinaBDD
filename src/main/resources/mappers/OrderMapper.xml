@@ -10,7 +10,7 @@
         SELECT * FROM userOrders WHERE id = #{user_id}
     </select>
 
-    <resultMap type="com.solvd.carina.demo.db.models.UserOrder"
+    <resultMap type="com.solvd.carina.demo.db.models.Orders"
                id="UserOrderResultMap" autoMapping="false">
         <id column="id" property="id"/>
         <result column="product_name" property="productName"/>

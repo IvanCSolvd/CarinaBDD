@@ -1,11 +1,11 @@
 package com.solvd.carina.demo.db.models;
 
-public class UserOrder {
+public class Orders {
     private Long id;
     private String productName;
     private Double productPrice;
 
-    public UserOrder() {
+    public Orders() {
     }
 
     public Long getId() {

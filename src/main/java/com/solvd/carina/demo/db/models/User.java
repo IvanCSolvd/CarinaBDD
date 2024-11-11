@@ -10,7 +10,7 @@ public class User {
     private String firstName;
     private String lastName;
     private Long zipCode;
-    private List<UserOrder> orders = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     public User() {
     }
@@ -63,11 +63,11 @@ public class User {
         this.zipCode = zipCode;
     }
 
-    public List<UserOrder> getOrders() {
+    public List<Orders> getOrders() {
         return orders;
     }
 
-    public void setOrders(List<UserOrder> orders) {
+    public void setOrders(List<Orders> orders) {
         this.orders = orders;
     }
 }

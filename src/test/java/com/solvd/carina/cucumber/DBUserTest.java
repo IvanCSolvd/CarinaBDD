@@ -3,7 +3,7 @@ package com.solvd.carina.cucumber;
 import com.solvd.carina.demo.db.mappers.IUserMapper;
 import com.solvd.carina.demo.db.mappers.IUserOrderMapper;
 import com.solvd.carina.demo.db.models.User;
-import com.solvd.carina.demo.db.models.UserOrder;
+import com.solvd.carina.demo.db.models.Orders;
 import com.solvd.carina.demo.utils.ConnectionDataBase;
 import com.zebrunner.carina.core.IAbstractTest;
 import org.apache.ibatis.session.SqlSession;
@@ -19,9 +19,9 @@ public class DBUserTest implements IAbstractTest {
             User user = userMapper.findById(1);
             System.out.println("Username: " + user.getUsername() + " password: " + user.getPassword());
             IUserOrderMapper userOrderMapper = session.getMapper(IUserOrderMapper.class);
-            List<UserOrder> userOrder = userOrderMapper.findOrdersByUserId(1);
-            System.out.println(userOrder.size());
-            for (UserOrder a: userOrder) {
+            List<Orders> orders = userOrderMapper.findOrdersByUserId(1);
+            System.out.println(orders.size());
+            for (Orders a: orders) {
                 System.out.println("Product Name: " + a.getProductName() + " - Product Price: " + a.getProductPrice());
             }
         }
